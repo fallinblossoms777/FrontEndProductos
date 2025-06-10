@@ -47,6 +47,11 @@ document.getElementById('formTurno').addEventListener('submit', async function(e
 
     const ahora = new Date();
     const fechaTurno = new Date(fecha_turno);
+    if (fechaTurno < ahora) {
+        mostrarMensaje("No se puede reservar un turno en una fecha y hora pasada.", "red");
+        return;
+    }
+
     if ((fechaTurno - ahora) > 48 * 60 * 60 * 1000) {
         mostrarMensaje("No se puede reservar un turno con más de 48 horas de anticipación.", "red");
         return;
