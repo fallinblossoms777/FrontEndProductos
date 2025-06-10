@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Alquileres</title>
+    <link rel="icon" href="https://images.vexels.com/media/users/3/306989/isolated/preview/393950e085f76ada4cc660da041f8c5a-olas-en-el-mar.png">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="inicio">
+        <a class="titulo" href="index.html">Sitio alquileres</a>
+    </header>
+    <main class="contenido">
+        <h2>Seleccionar turno</h2>
+        <form id="formTurno">
+            <label for="cliente">Cliente:</label>
+            <select id="cliente" required></select>
+            <br>
+            <label for="fecha_turno">Fecha y hora del turno:</label>
+            <input type="datetime-local" id="fecha_turno" required>
+            <br>
+            <button type="submit" class="boton-turno">Reservar turno</button>
+        </form>
+        <div id="mensaje"></div>
+    </main>
+    <script src="../js/turno.js"></script>
+</body>
+</html>

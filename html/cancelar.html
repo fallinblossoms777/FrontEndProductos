@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>Cancelar turno</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header class="inicio">
+        <a class="titulo" href="index.html">Sitio alquileres</a>
+    </header>
+    <main class="contenido">
+        <form id="formCancelar">
+            <label for="turnoId">Seleccione el turno a cancelar:</label>
+            <select id="turnoId" required></select>
+            <br>
+            <label>¿El motivo es por lluvia/tormenta?</label>
+            <select id="motivoTormenta" required>
+                <option value="no">No</option>
+                <option value="si">Sí</option>
+            </select>
+            <br>
+            <button type="submit" class="boton-turno">Cancelar turno</button>
+        </form>
+        <div id="mensajeCancelacion"></div>
+        <div style="margin-top:20px;">
+            <b>Reglas:</b>
+            <ul>
+                <li>Los turnos se pueden tomar con una anticipación no mayor a 48 hs.</li>
+                <li>Podrán cancelarse hasta 2 horas antes del turno sin costos.</li>
+                <li>Si cancela por tormenta, se le devolverá el 50% del valor abonado.</li>
+            </ul>
+        </div>
+    </main>
+    <script src="../js/cancelar.js"></script>
+</body>
+</html>

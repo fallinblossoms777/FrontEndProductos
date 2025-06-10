@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Alquileres</title>
+    <link rel="icon" href="https://images.vexels.com/media/users/3/306989/isolated/preview/393950e085f76ada4cc660da041f8c5a-olas-en-el-mar.png">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="inicio">
+        <a class="titulo" href="index.html">Sitio alquileres</a>
+    </header>
+    <main class="contenido">
+        <h2>Pago</h2>
+        <form id="formPago">
+            <label for="clienteId">Cliente:</label>
+            <select id="clienteId" required></select><br>
+
+            <label for="turnoId">Turno reservado:</label>
+            <select id="turnoId" required></select><br>
+
+            <label for="monto">Monto a pagar:</label>
+            <input type="text" id="monto" readonly><br>
+
+            <label for="moneda">Moneda:</label>
+            <select id="moneda" required>
+                <option value="local">Local</option>
+                <option value="extranjera">Extranjera</option>
+            </select><br>
+
+            <label for="metodo_pago">Método de pago:</label>
+            <select id="metodo_pago" required>
+                <option value="efectivo">Efectivo (solo hasta 2hs antes del turno)</option>
+                <option value="tarjeta">Tarjeta</option>
+            </select><br>
+
+            <div style="margin:10px 0; color:#00796b; font-weight:bold;">
+                Seguro de tormenta: Si hay tormenta imprevista y no puedes usar tu turno, se te devolverá el 50% del valor abonado.
+            </div>
+
+            <button type="submit" class="boton-turno">Pagar</button>
+        </form>
+        <div id="mensajePago"></div>
+    </main>
+    <script src="../js/pago.js"></script>
+</body>
+</html>

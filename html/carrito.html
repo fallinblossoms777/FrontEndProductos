@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Carrito de Alquiler</title>
+    <link rel="icon" href="https://images.vexels.com/media/users/3/306989/isolated/preview/393950e085f76ada4cc660da041f8c5a-olas-en-el-mar.png"> 
+    <link rel="stylesheet" href="style.css" /> 
+</head>
+<body>
+    <header class="inicio">
+        <a class="titulo" href="index.html">Sitio alquileres</a> 
+        <link rel="stylesheet" href="../css/style.css" />
+    </header>
+
+    <main class="contenido">
+        <h2>Mi carrito:</h2> 
+        
+        <div id="carrito"></div> 
+        
+        <a href="turno.html" class="boton-turno">Seleccionar turno</a> 
+
+    </main>
+
+    <script src="../js/carrito.js"></script> 
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            mostrarCarrito();
+        });
+    </script>
+</body>
+</html>
